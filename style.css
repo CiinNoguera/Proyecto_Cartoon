@@ -187,6 +187,7 @@
     justify-content: space-around;
     overflow: hidden;
     margin: 10px;
+    
 
 }
 .cards1__tittle,
@@ -203,11 +204,24 @@
 .cards2__1,
 .cards2__2,
 .cards2__3 {
-    background-color: #fff;
+    background-color: transparent;
     margin: 10px;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
     display: flex;
     flex-direction: column; 
     position: relative; 
+}
+
+.cards1__1:hover, 
+.cards1__2:hover, 
+.cards1__3:hover,
+.cards2__1:hover,
+.cards2__2:hover,
+.cards2__3:hover {
+    border-image: linear-gradient(90deg,#00c0ff 0%, #ffff00 40%, #ff00e9 80%);
+    border-image-slice: 1;
+    width: 320px;
 }
 
 .cards1__img,
@@ -216,11 +230,18 @@
     width: 280px;
 }
 
+.cards1__img:hover,
+.cards2__img:hover {
+    width: 315px;
+}
+
 .cards1__tittle1,
 .cards2__tittle1 {
     color:#8b8a8a;
     font-size: 14px;
     padding: 15px 15px 0px 15px ;
+    margin: 0%;
+    background-color: #fff;
 }
 
 .cards1__tittle2,
@@ -229,6 +250,8 @@
     font-size: 20px;
     font-weight: 750;
     padding: 0px 15px 15px 15px;
+    margin: 0%;
+    background-color: #fff;
 }
 
 .cards1__like,
@@ -550,12 +573,6 @@
         width: 300px;
    }
 
-   .cards1__img:hover,
-    .cards2__img:hover {
-        height: 210px;
-        width: 330px;
-   }
-
    .footer {
     margin: 70px 100px;
 }
@@ -606,7 +623,17 @@
         width: 350px;
    }
 
-   .cards1__img:hover,
+    .cards1__1:hover, 
+    .cards1__2:hover, 
+    .cards1__3:hover,
+    .cards2__1:hover,
+    .cards2__2:hover,
+    .cards2__3:hover {
+    width: 375px;
+}
+
+
+    .cards1__img:hover,
     .cards2__img:hover {
         height: 250px;
         width: 370px;
@@ -657,10 +684,49 @@
         width: 390px;
    }
 
-   .cards1__img:hover,
+    .cards1__1:hover, 
+    .cards1__2:hover, 
+    .cards1__3:hover,
+    .cards2__1:hover,
+    .cards2__2:hover,
+    .cards2__3:hover {
+    width: 415px;
+}
+
+
+    .cards1__img:hover,
     .cards2__img:hover {
         height: 290px;
         width: 410px;
+   }
+}
+
+@media (min-width: 1800px) {
+
+    .cards1__tittle,
+    .cards2__tittle {
+        font-size: 70px;
+    }
+    
+    .cards1__img,
+    .cards2__img {
+        height: 300px;
+        width: 430px;
+   }
+
+    .cards1__1:hover, 
+    .cards1__2:hover, 
+    .cards1__3:hover,
+    .cards2__1:hover,
+    .cards2__2:hover,
+    .cards2__3:hover {
+    width: 450px;
+}
+
+
+    .cards1__img:hover,
+    .cards2__img:hover {
+        width: 445px;
    }
 }
 
