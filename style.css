@@ -221,18 +221,18 @@
 .cards2__3:hover {
     border-image: linear-gradient(90deg,#00c0ff 0%, #ffff00 40%, #ff00e9 80%);
     border-image-slice: 1;
-    width: 320px;
+    
 }
 
 .cards1__img,
 .cards2__img {
     height: 160px;
-    width: 280px;
+    
 }
 
 .cards1__img:hover,
 .cards2__img:hover {
-    width: 315px;
+    transform: scale(1.1);
 }
 
 .cards1__tittle1,
